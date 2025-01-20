@@ -23,5 +23,5 @@ To run the project locally:
 
 1. **Clone the repository**  
    ```sh
-   git clone https://github.com/your-username/etch-a-sketch.git
+   git clone https://github.com/your-username/etch-a-sketch.git](https://github.com/muhammadmuzaib/Etch-a-Sketch.git
 ```
