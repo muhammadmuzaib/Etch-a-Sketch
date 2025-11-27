@@ -1,12 +1,10 @@
 const container = document.getElementById('container');
 
-// Variables to keep track of drawing state
 let isDrawing = false;
 let isErasing = false;
 let currentColor = 'black';
-let lastColor = 'black'; 
+let lastColor = 'black';
 
-// Create a grid of the given size
 function createGrid(size) {
   container.innerHTML = '';
 
@@ -16,15 +14,13 @@ function createGrid(size) {
   for (let i = 0; i < size * size; i++) {
     const cell = document.createElement('div');
     cell.classList.add('cell');
-    
-    // Color on mouseover if drawing
+
     cell.addEventListener('mouseover', () => {
       if (isDrawing) {
         cell.style.backgroundColor = currentColor;
       }
     });
-    
-    // Also color immediately on mousedown
+
     cell.addEventListener('mousedown', (e) => {
       if (e.button === 0) {
         cell.style.backgroundColor = currentColor;
